@@ -1,4 +1,4 @@
-package com.udacity.sandwichclub;
+package com.udacity.SandwichClub;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,26 +7,29 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.squareup.picasso.Picasso;
-import com.udacity.sandwichclub.model.Sandwich;
-import com.udacity.sandwichclub.utils.JsonUtils;
+import com.udacity.SandwichClub.model.Sandwich;
+import com.udacity.SandwichClub.utils.JsonUtils;
 
 import org.json.JSONException;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class DetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_POSITION = -1;
+
+    TextView description_data, place_of_origin_data,also_known_data;
     ImageView ingredientsIv;
-    TextView ingredients_data,description_data, place_of_origin_data,also_known_data;
+    TextView ingredients_data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        ingredientsIv = findViewById(R.id.image_iv);
+        ingredientsIv=(ImageView)findViewById(R.id.image_iv);
         ingredients_data=(TextView)findViewById(R.id.ingredients_data);
         description_data=(TextView)findViewById(R.id.description_data);
         place_of_origin_data=(TextView)findViewById(R.id.place_of_origin_data);

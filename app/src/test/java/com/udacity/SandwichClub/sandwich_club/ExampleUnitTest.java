@@ -1,7 +1,8 @@
-package com.udacity.sandwichclub.sandwich_club;
+package com.udacity.SandwichClub.sandwich_club;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;
 
 /**

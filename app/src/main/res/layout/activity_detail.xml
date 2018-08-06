@@ -11,7 +11,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:background="#000"
-    tools:context="com.udacity.sandwichclub.DetailActivity">
+    tools:context="com.udacity.SandwichClub.DetailActivity">
     <ImageView
         android:id="@+id/image_iv"
         android:layout_width="match_parent"
